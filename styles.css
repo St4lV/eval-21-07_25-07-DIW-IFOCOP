@@ -1,0 +1,84 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: "Barlow Condensed", sans-serif;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+}
+@media only screen and (min-width: 992px) {
+  header{
+        position: fixed;
+        width: 100%;
+        z-index: 100;
+    }
+    main{
+        margin-top: 100px;
+    }
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+footer{
+    background-color: #d1d1d1;
+    color: black;
+    padding: 10px;
+}
+.carousel-caption{
+        color: black;
+    }
+
+html[data-bs-theme="dark"] {
+    footer{
+        background-color: #2b2b2b;
+        color: white;
+    }
+    .carousel-caption{
+        color: white;
+    }
+    a{
+        text-decoration: none;
+        color: white;
+    }
+}
+
+.nav-f-s li a{
+    font-size: 20px;
+}
+#btn_theme_switch{
+    border: none;
+    padding: 10px;
+    position: relative;
+    bottom: 4px;
+    background:transparent;
+}
+.carousel-inner{
+    height: 20%;
+}
+#carouselExampleCaptions{
+    margin: 0px 5%;
+}
+.c-img-avis{
+    display: flex;
+    justify-content: space-around;
+}
+.img-avis{
+    width: 45%;
+    margin: 10px;
+    border-radius: 2%;
+}
+.footer-infos{
+    display: flex;
+    justify-content: space-around;
+}
+#maps-integration , .access-text{
+    padding: 5px 5%;
+}
