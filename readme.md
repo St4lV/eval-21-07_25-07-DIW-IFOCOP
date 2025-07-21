@@ -1,1 +1,1 @@
-#Site vitrine de l'hôtel fictif PARIMIS
+# Site vitrine de l'hôtel fictif PARIMIS
