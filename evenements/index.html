@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="fr" data-bs-theme="dark">
+  <head>
+    <!--
+      img bank Paris
+      https://unsplash.com/fr/s/photos/paris-hotel
+    -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hôtel Parimis - Hôtel 5* Paris</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css">
+  </head>
+  
+  <body id="main-body">
+
+    <!-- Import JS -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+    <script src="/main.js"></script>
+
+    <!-- Header commun à toutes les pages-->
+
+    
+
+
+    <header>
+
+      <!-- Navbar reprise de la documentation Bootstrap 
+       -> https://getbootstrap.com/docs/5.3/components/navbar/ 
+       
+       -->
+
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+
+          <a class="navbar-brand" href="/">
+            <h1>Hôtel Parimis</h1><hr>
+          </a>
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+
+                <!-- l'Hôtel -->
+
+              <li class="nav-item dropdown"> 
+                <a class="nav-link dropdown-toggle" href="/" role="button" data-bs-toggle="dropdown" aria-expanded="false">Notre Hôtel</a>
+
+                <ul class="dropdown-menu" class="nav-f-s">
+                  <li><a class="dropdown-item" href="/#accueil">Accueil</a></li>
+                  <li><a class="dropdown-item" href="/contact">Qui sommes nous ?</a></li>
+                  <li><a class="dropdown-item" href="/#access">Accéder au bâtiment</a></li>
+                  <li><a class="dropdown-item" href="/evenements">Évènements</a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="reservation">Réservation</a>
+              </li>
+                <!-- Formules chambres -->
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Nos chambres
+                </a>
+                <ul class="dropdown-menu" class="nav-f-s">
+                  <li><a class="dropdown-item" href="/reservation/formules">Les gammes</a></li>
+                  <li><a class="dropdown-item" href="/reservation/formules/access">Formule Access</a></li>
+                  <li><a class="dropdown-item" href="/reservation/formules/confort/">Formule Confort</a></li>
+                  <li><a class="dropdown-item" href="/reservation/formules/deluxe/">Formule Deluxe</a></li>
+                  <li><a class="dropdown-item" href="/reservation/formules/prestige/">Formule Prestige</a></li>
+                </ul>
+              </li>
+
+                <!-- Autres -->
+
+              <li class="nav-item">
+                <a class="nav-link" href="/reservation/restaurant/">Notre restaurant</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="/reservation/spa/">Formule SPA</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="https://www.booking.com/hotel/fr/parimis-hotel" target="_blank">Avis</a>
+              </li>
+
+              <!-- Changement de thème (voir main.js) -->
+
+              <li>
+                <button id="btn_theme_switch" data-bs-theme-value="dark"></button>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+
+    </main>
+
+    <footer>
+      <hr>
+      <div class="footer-infos">
+        <ul>
+          <li>
+            <a href="/legal/#cgu">Conditions Générales d'Utilisation</a>
+          </li>
+          <li>
+            <a href="/legal/#cgv">Conditions Générales de Vente</a>
+          </li>
+          <li>
+            Nous contacter
+            <ul>
+              <li><a href="tel:+33102030405">01 02 03 04 05</a></li>
+              <li><a href="mailto:contact@parimis.fr">contact@parimis.fr</a></li>
+            </ul>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            Site réalisé par Liam L.B.
+        </li>
+        <li>Contact :
+            <ul>
+                <li>
+                    <a href="https://github.com/St4lV/" target="_blank">Github</a>
+                </li>
+                <li>
+                    <a href="https://discord.gg/mCY6mPP7Gw" target="_blank">Discord</a>
+                </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>
