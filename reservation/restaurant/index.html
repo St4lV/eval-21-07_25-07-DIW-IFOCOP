@@ -34,114 +34,61 @@
        
        -->
 
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-
-          <a class="navbar-brand" href="/">
-            <h1>Hôtel Parimis</h1><hr>
-          </a>
-
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav">
-
-                <!-- l'Hôtel -->
-
-              <li class="nav-item dropdown"> 
-                <a class="nav-link dropdown-toggle" href="/" role="button" data-bs-toggle="dropdown" aria-expanded="false">Notre Hôtel</a>
-
-                <ul class="dropdown-menu" class="nav-f-s">
-                  <li><a class="dropdown-item" href="/#accueil">Accueil</a></li>
-                  <li><a class="dropdown-item" href="/contact">Qui sommes nous ?</a></li>
-                  <li><a class="dropdown-item" href="/#access">Accéder au bâtiment</a></li>
-                  <li><a class="dropdown-item" href="/evenements">Évènements</a></li>
-                </ul>
-              </li>
-
-              <li class="nav-item">
-                <a class="nav-link" href="reservation">Réservation</a>
-              </li>
-                <!-- Formules chambres -->
-
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Nos chambres
-                </a>
-                <ul class="dropdown-menu" class="nav-f-s">
-                  <li><a class="dropdown-item" href="/reservation/formules">Les gammes</a></li>
-                  <li><a class="dropdown-item" href="/reservation/formules/access">Formule Access</a></li>
-                  <li><a class="dropdown-item" href="/reservation/formules/confort/">Formule Confort</a></li>
-                  <li><a class="dropdown-item" href="/reservation/formules/deluxe/">Formule Deluxe</a></li>
-                  <li><a class="dropdown-item" href="/reservation/formules/prestige/">Formule Prestige</a></li>
-                </ul>
-              </li>
-
-                <!-- Autres -->
-
-              <li class="nav-item">
-                <a class="nav-link" href="/reservation/restaurant/">Notre restaurant</a>
-              </li>
-
-              <li class="nav-item">
-                <a class="nav-link" href="/reservation/spa/">Formule SPA</a>
-              </li>
-
-              <li class="nav-item">
-                <a class="nav-link" href="https://www.booking.com/hotel/fr/parimis-hotel" target="_blank">Avis</a>
-              </li>
-
-              <!-- Changement de thème (voir main.js) -->
-
-              <li>
-                <button id="btn_theme_switch" data-bs-theme-value="dark"></button>
-              </li>
-
-            </ul>
-          </div>
-        </div>
-      </nav>
     </header>
 
     <main>
-
+      <h2>Notre restaurant</h2>
+      <hr>
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://images.unsplash.com/photo-1686836715835-65af22ea5cd4?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="d-block w-100 carousel-main" alt="image 1">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>First slide label</h5>
+              <p>Some representative placeholder content for the first slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="https://plus.unsplash.com/premium_photo-1718285552243-85861ac9e179?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="d-block w-100 carousel-main" alt="image 2">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Second slide label</h5>
+              <p>Some representative placeholder content for the second slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="https://images.unsplash.com/photo-1709548145082-04d0cde481d4?q=80&w=1166&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="d-block w-100 carousel-main" alt="image 3">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Third slide label</h5>
+              <p>Some representative placeholder content for the third slide.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <hr>
+      <p>Suspendisse auctor vehicula elit ac molestie. Mauris orci odio, tristique ut erat eu, tempor placerat enim. Nullam condimentum ex ex. Sed facilisis, odio nec maximus mattis, nibh metus semper erat, vitae tempus orci nibh at urna. Praesent luctus sed mauris nec posuere. Aenean iaculis varius lacus et egestas. Nulla facilisi. Suspendisse auctor vehicula elit ac molestie. Mauris orci odio, tristique ut erat eu, tempor placerat enim. Nullam condimentum ex ex. Sed facilisis, odio nec maximus mattis, nibh metus semper erat, vitae tempus orci nibh at urna. Praesent luctus sed mauris nec posuere. Aenean iaculis varius lacus et egestas. Nulla facilisi. </p>
+      <hr>
+      <h3>Menu du jour</h3>
+      <hr>
+      <div class="img-menu-dj-holder">
+        <img src="https://c8.alamy.com/compfr/2rdncd7/tableau-de-menu-de-restaurant-a-aix-en-provence-france-2rdncd7.jpg" alt="Menu du jour" class="img-menu-dj">
+      </div>
     </main>
 
     <footer>
-      <hr>
-      <div class="footer-infos">
-        <ul>
-          <li>
-            <a href="/legal/#cgu">Conditions Générales d'Utilisation</a>
-          </li>
-          <li>
-            <a href="/legal/#cgv">Conditions Générales de Vente</a>
-          </li>
-          <li>
-            Nous contacter
-            <ul>
-              <li><a href="tel:+33102030405">01 02 03 04 05</a></li>
-              <li><a href="mailto:contact@parimis.fr">contact@parimis.fr</a></li>
-            </ul>
-          </li>
-        </ul>
-        <ul>
-          <li>
-            Site réalisé par Liam L.B.
-        </li>
-        <li>Contact :
-            <ul>
-                <li>
-                    <a href="https://github.com/St4lV/" target="_blank">Github</a>
-                </li>
-                <li>
-                    <a href="https://discord.gg/mCY6mPP7Gw" target="_blank">Discord</a>
-                </li>
-            </ul>
-          </li>
-        </ul>
-      </div>
+      
     </footer>
   </body>
 </html>

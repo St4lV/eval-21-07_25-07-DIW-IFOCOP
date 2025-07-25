@@ -1,4 +1,3 @@
-
 // BOOTSTRAP COLOR THEME CHANGE (trouvé sur la documentation)
 (() => {
   'use strict'
@@ -77,7 +76,7 @@
 
 //Réalisé par l'élève :
 
-let act_theme = localStorage.getItem('theme');
+let act_theme = localStorage.getItem('theme') ;
 const dark_theme_icon = `<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-moon-fill" viewBox="0 0 16 16">
   <path d="M6 .278a.77.77 0 0 1 .08.858 7.2 7.2 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277q.792-.001 1.533-.16a.79.79 0 0 1 .81.316.73.73 0 0 1-.031.893A8.35 8.35 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.75.75 0 0 1 6 .278"/>
 </svg>`
@@ -87,7 +86,77 @@ const light_theme_icon = `<svg xmlns="http://www.w3.org/2000/svg" width="16" hei
 
 
 window.onload = function (){
+const header_nav = document.querySelector("header")
+    header_nav.innerHTML+=`<nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
 
+          <a class="navbar-brand" href="/">
+            <h1>Hôtel Parimis</h1><hr>
+          </a>
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+
+                <!-- l'Hôtel -->
+
+              <li class="nav-item dropdown"> 
+                <a class="nav-link dropdown-toggle" href="/" role="button" data-bs-toggle="dropdown" aria-expanded="false">Notre Hôtel</a>
+
+                <ul class="dropdown-menu" class="nav-f-s">
+                  <li><a class="dropdown-item" href="/#accueil">Accueil</a></li>
+                  <li><a class="dropdown-item" href="/#presentation">Qui sommes nous ?</a></li>
+                  <li><a class="dropdown-item" href="/#access">Accéder au bâtiment</a></li>
+                  <li><a class="dropdown-item" href="#contact">Contact</a></li>
+                </ul>
+              </li>
+
+                <!-- Page réservations -->
+
+              <li class="nav-item">
+                <a class="nav-link" href="/reservation">Réservation</a>
+              </li>
+                <!-- Formules chambres -->
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Nos chambres
+                </a>
+                <ul class="dropdown-menu nav-f-s">
+                  <li><a class="dropdown-item" href="/reservation/formules">Les gammes</a></li>
+                  <li><a class="dropdown-item" href="/reservation/formules/access">Formule Access</a></li>
+                  <li><a class="dropdown-item" href="/reservation/formules/confort/">Formule Confort</a></li>
+                  <li><a class="dropdown-item" href="/reservation/formules/deluxe/">Formule Deluxe</a></li>
+                  <li><a class="dropdown-item" href="/reservation/formules/prestige/">Formule Prestige</a></li>
+                </ul>
+              </li>
+
+                <!-- Autres -->
+
+              <li class="nav-item">
+                <a class="nav-link" href="/reservation/restaurant/">Notre restaurant</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="/reservation/spa/">Notre SPA</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="/#avis">Avis</a>
+              </li>
+
+              <!-- Changement de thème (voir st_changeTheme() ) -->
+
+              <li>
+                <button id="btn_theme_switch" data-bs-theme-value="dark"></button>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+      </nav>`
     //Thème switch
 
     const theme_btn = document.querySelector("#btn_theme_switch")
@@ -113,10 +182,47 @@ window.onload = function (){
         }
         act_theme = theme
         theme_btn.setAttribute("data-bs-theme-value",theme)
-        theme_btn
+        
+        localStorage.setItem('theme',theme) ;
         document.documentElement.setAttribute('data-bs-theme', theme)
     }
 
+    
+
+    const footer = document.querySelector("footer")
+    footer.innerHTML+=`<hr>
+      <div class="footer-infos">
+        <ul>
+          <li>
+            <a href="/legal/#cgu">Conditions Générales d'Utilisation</a>
+          </li>
+          <li>
+            <a href="/legal/#cgv">Conditions Générales de Vente</a>
+          </li>
+          <li id="contact">
+            Nous contacter
+            <ul>
+              <li><a href="tel:+33102030405">01 02 03 04 05</a></li>
+              <li><a href="mailto:contact@parimis.fr">contact@parimis.fr</a></li>
+            </ul>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            Site réalisé par Liam L.B.
+        </li>
+        <li>Contact :
+            <ul>
+                <li>
+                    <a href="https://github.com/St4lV/" target="_blank">Github</a>
+                </li>
+                <li>
+                    <a href="https://discord.gg/mCY6mPP7Gw" target="_blank">Discord</a>
+                </li>
+            </ul>
+          </li>
+        </ul>
+      </div>`
 
 
 }

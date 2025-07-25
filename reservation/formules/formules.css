@@ -1,0 +1,67 @@
+article{
+    display: flex;
+}
+article *{
+    margin: 0px 5px 20px 5px;
+}
+#form-div{
+    position: fixed;left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: #000000aa;
+    z-index: 11;
+    display: flex;
+    
+    justify-content: center;
+}
+#form-holder{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    background-color: #000000aa;
+    overflow-y: scroll;
+}
+form,#form-2,#form-4{
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 1.4em;
+    padding: 0 5%;
+}
+#form-3,#form-4{
+    justify-content: center;
+}
+#paiment-val{
+    width: 80%;
+}
+#num-input,#cc-expires-m,#cc-expires-y{
+    text-align: center;
+}
+.required{
+    color: red;
+}
+.checkbox-form{
+    display: flex;
+}
+.additional-option{
+    margin-left: 10px;
+}
+.chambres-img{
+    height: 300px;
+    width: 350px;
+    border-radius: 1%;
+}
+main{
+    padding-bottom: 2%;
+}
+.carousel-img{
+    border-radius: 1%;
+    height: 500px;
+}
+#close-form{
+    height: 30px;
+    width: 30px;
+    border: none;
+    background-color: none;
+}
